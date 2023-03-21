@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="myCollectionViewCell" customModule="CustomCellUsing_xib_file" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9c-uA-cGC">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beetroot" translatesAutoresizingMaskIntoConstraints="NO" id="I8s-B5-Eak">
+                                <rect key="frame" x="12" y="13" width="176" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="g0a-uA-uAc"/>
+                                    <constraint firstAttribute="width" constant="176" id="ryZ-ry-M1B"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beetroot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xa-nj-Sbl">
+                                <rect key="frame" x="12" y="171" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="raH-aZ-C2t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98224347829818726" green="0.96855014562606812" blue="0.19939503073692322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I8s-B5-Eak" firstAttribute="top" secondItem="k9c-uA-cGC" secondAttribute="top" constant="13" id="HJU-RZ-fiI"/>
+                            <constraint firstItem="3Xa-nj-Sbl" firstAttribute="top" secondItem="I8s-B5-Eak" secondAttribute="bottom" constant="4" id="HdC-9c-X4u"/>
+                            <constraint firstItem="3Xa-nj-Sbl" firstAttribute="leading" secondItem="k9c-uA-cGC" secondAttribute="leading" constant="12" id="JUZ-ug-9nm"/>
+                            <constraint firstItem="I8s-B5-Eak" firstAttribute="leading" secondItem="k9c-uA-cGC" secondAttribute="leading" constant="12" id="Y74-9I-pXx"/>
+                            <constraint firstAttribute="trailing" secondItem="I8s-B5-Eak" secondAttribute="trailing" constant="12" id="lTX-Gs-tLc"/>
+                            <constraint firstAttribute="bottom" secondItem="3Xa-nj-Sbl" secondAttribute="bottom" constant="8" id="pOa-of-6iD"/>
+                            <constraint firstAttribute="bottom" secondItem="I8s-B5-Eak" secondAttribute="bottom" constant="33" id="s3R-qg-QkZ"/>
+                            <constraint firstAttribute="trailing" secondItem="3Xa-nj-Sbl" secondAttribute="trailing" constant="8" id="xF9-34-eJS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="k9c-uA-cGC" secondAttribute="trailing" id="crM-ig-0KW"/>
+                <constraint firstItem="k9c-uA-cGC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="guf-3m-VzI"/>
+                <constraint firstAttribute="bottom" secondItem="k9c-uA-cGC" secondAttribute="bottom" id="qQt-zB-64J"/>
+                <constraint firstItem="k9c-uA-cGC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tR0-bJ-mes"/>
+            </constraints>
+            <connections>
+                <outlet property="myVegetableImage" destination="I8s-B5-Eak" id="YWg-7D-cA9"/>
+                <outlet property="myVegetableName" destination="3Xa-nj-Sbl" id="YvM-dM-Ht5"/>
+            </connections>
+            <point key="canvasLocation" x="-73.282442748091597" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="beetroot" width="160" height="160"/>
+    </resources>
+</document>
