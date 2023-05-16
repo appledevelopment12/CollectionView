@@ -17,6 +17,8 @@
 		5D7C2BC429B46DA000630C22 /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C2BC329B46DA000630C22 /* myTableViewCell.swift */; };
 		5D7C2BC629B479A600630C22 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C2BC529B479A600630C22 /* myCollectionViewCell.swift */; };
 		5D7C2BC829B47B3300630C22 /* Entertenment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C2BC729B47B3300630C22 /* Entertenment.swift */; };
+		5DD190BB2A0502630027F82D /* imagerelatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD190BA2A0502630027F82D /* imagerelatedViewController.swift */; };
+		5DD190CB2A051F260027F82D /* dataserviceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD190CA2A051F260027F82D /* dataserviceFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5D7C2BC329B46DA000630C22 /* myTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
 		5D7C2BC529B479A600630C22 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D7C2BC729B47B3300630C22 /* Entertenment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entertenment.swift; sourceTree = "<group>"; };
+		5DD190BA2A0502630027F82D /* imagerelatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagerelatedViewController.swift; sourceTree = "<group>"; };
+		5DD190CA2A051F260027F82D /* dataserviceFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataserviceFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,53 @@
 		5D7C2BAB29B46CE600630C22 /* CollectionViewWithTableView */ = {
 			isa = PBXGroup;
 			children = (
+				5DD190C92A051EE90027F82D /* Dataservice */,
+				5DD190CE2A0521980027F82D /* model */,
+				5DD190CD2A05213F0027F82D /* Controller */,
+				5DD190CC2A05211C0027F82D /* celll */,
 				5D7C2BAC29B46CE600630C22 /* AppDelegate.swift */,
 				5D7C2BAE29B46CE600630C22 /* SceneDelegate.swift */,
-				5D7C2BB029B46CE600630C22 /* ViewController.swift */,
 				5D7C2BB229B46CE600630C22 /* Main.storyboard */,
-				5D7C2BC329B46DA000630C22 /* myTableViewCell.swift */,
-				5D7C2BC729B47B3300630C22 /* Entertenment.swift */,
 				5D7C2BB829B46CEA00630C22 /* Assets.xcassets */,
 				5D7C2BBA29B46CEA00630C22 /* LaunchScreen.storyboard */,
 				5D7C2BBD29B46CEA00630C22 /* Info.plist */,
 				5D7C2BB529B46CE600630C22 /* CollectionViewWithTableView.xcdatamodeld */,
-				5D7C2BC529B479A600630C22 /* myCollectionViewCell.swift */,
 			);
 			path = CollectionViewWithTableView;
+			sourceTree = "<group>";
+		};
+		5DD190C92A051EE90027F82D /* Dataservice */ = {
+			isa = PBXGroup;
+			children = (
+				5DD190CA2A051F260027F82D /* dataserviceFile.swift */,
+			);
+			path = Dataservice;
+			sourceTree = "<group>";
+		};
+		5DD190CC2A05211C0027F82D /* celll */ = {
+			isa = PBXGroup;
+			children = (
+				5D7C2BC329B46DA000630C22 /* myTableViewCell.swift */,
+				5D7C2BC529B479A600630C22 /* myCollectionViewCell.swift */,
+			);
+			path = celll;
+			sourceTree = "<group>";
+		};
+		5DD190CD2A05213F0027F82D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D7C2BB029B46CE600630C22 /* ViewController.swift */,
+				5DD190BA2A0502630027F82D /* imagerelatedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DD190CE2A0521980027F82D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5D7C2BC729B47B3300630C22 /* Entertenment.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +190,10 @@
 			files = (
 				5D7C2BC629B479A600630C22 /* myCollectionViewCell.swift in Sources */,
 				5D7C2BB129B46CE600630C22 /* ViewController.swift in Sources */,
+				5DD190CB2A051F260027F82D /* dataserviceFile.swift in Sources */,
 				5D7C2BC429B46DA000630C22 /* myTableViewCell.swift in Sources */,
 				5D7C2BAD29B46CE600630C22 /* AppDelegate.swift in Sources */,
+				5DD190BB2A0502630027F82D /* imagerelatedViewController.swift in Sources */,
 				5D7C2BB729B46CE600630C22 /* CollectionViewWithTableView.xcdatamodeld in Sources */,
 				5D7C2BC829B47B3300630C22 /* Entertenment.swift in Sources */,
 				5D7C2BAF29B46CE600630C22 /* SceneDelegate.swift in Sources */,
